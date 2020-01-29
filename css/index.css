@@ -1,3 +1,270 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Your code starts here! */
+
+/* element selectors */
+
+header {
+	display: flex;
+	/* width: 100%; */
+	text-align: center;
+	margin-bottom: 5%;
+	justify-content: space-evenly;	
+	align-items: center;
+	/* align-items: stretch; */
+}
+footer {
+	text-align: center;
+	padding: 10%;
+	padding-top: 5%;
+}
+
+/* class selectors */
+.navigation {
+	display: flex;
+	/* width: 100%; */
+	text-align: center;
+	margin-bottom: 3%;
+	margin-top: 2%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.navigation a{
+	/* display: inline-block; */
+	text-decoration: none;
+	color: gray;
+	/* width: 13%; */
+	
+}
+
+.logo {
+	flex-shrink: 1;
+}
+
+.header {
+	font-size: 4em;
+	text-align: center;
+	/* width: 49%; */
+	display: flex;
+	/* margin-bottom: 5%; */
+	flex-direction: column;
+	align-items: center;
+
+
+}
+
+.box-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img1 {
+	/* width: 18em; */
+	display: flex;
+	/* align-items: stretch; */
+
+}
+
+.button {
+	display: flex;
+	font-size: .2em;
+	border: 1px solid gray;
+	width: 60%;
+	padding: 3%;
+	text-align: center;
+	/* margin-left: 37%; */
+	align-items: center;
+}
+
+.break {
+	border: 1px solid gray;
+	text-align: center;
+	width: 90%;
+	margin-left: 5%;
+	
+}
+
+.top-content {
+	display: flex;
+	/* width: 100%; */
+	/* margin-bottom: 7%; */
+	/* height: 20%; */
+}
+.top-content div {
+	display: flex;
+	/* width: 49%; */
+	padding: 5%;
+	flex-direction: column;
+}
+
+.middle-img {
+	display: flex;
+	text-align: center;
+	/* width: 100%; */
+	/* padding: 0 5%; */
+	justify-content: center;
+	
+}
+
+.middle-img img {
+	flex: .9;
+}
+
+.bottom-content {
+	display: flex;
+	/* width: 100%; */
+	justify-content: space-around;
+}
+
+.bottom-content div {
+	display: flex;
+	/* width: 33%; */
+	padding: 5%;
+	flex-direction: column;
+	
+}
+
+.contact {
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.header2 {
+	display: flex;
+	/* width: 49%; */
+	padding: 5%;
+	flex-direction: column;
+}
+
+.header2 h1 {
+	font-size: 1.5em;
+}
+
+
+
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 5%;
+}
+
+.main-content div {
+	width: 42%;
+	background-color: rgb(238, 237, 237);
+	border: 1px solid black;
+	margin-top: 4%;
+	padding: 2%;
+}
+
+.button2 {
+	display: flex;
+	font-size: .8em;
+	border: 1px solid rgb(5, 5, 5);
+	width: 60%;
+	background-color: lightgrey;
+	border-radius: 4px;
+	text-align: center;
+	/* padding: 3%; */
+	/* text-align: center; */
+	/* margin-left: 37%; */
+	/* align-items: center; */
+}
+
+.last-content {
+	display: flex;
+	
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	margin: 5%;
+	width: 45%;
+}
+
+.info p {
+	margin-bottom: 3%;
+}
+
+.info ul {
+	list-style-type: square;
+	line-height: 200%;
+	align-items: baseline;
+	margin-left: 3%;
+}
+
+.services-info-img {
+	margin-top: 5%;
+	max-width: 40%;
+	height: 1%;
+}
 
